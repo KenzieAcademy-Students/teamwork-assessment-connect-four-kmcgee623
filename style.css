@@ -1,1 +1,139 @@
 /* Write your CSS Here. */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 600px;
+    margin: auto;
+    font-family: 'Courier New', monospace;
+    background: #80a35f url("https://iili.io/Lj2B9t.jpg") no-repeat scroll 50% 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#board {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    background-color: #073a93;;
+    position: relative;
+    border-radius: 11%;
+    z-index: 1;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.50), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+
+.chooseColumn {
+    width: 60px;
+    background: linear-gradient(0deg, rgba(1,1,92,0) 6%, rgba(1,1,92,1) 20%, rgba(1,1,92,1) 50%, rgba(1,1,92,1) 80%, rgba(1,1,92,0) 94%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    border: 0;
+    
+}
+
+.chooseColumn:hover {
+    background: linear-gradient(0deg, rgba(36, 1, 92, 0) 6%,  rgba(1,1,213,1) 15%, rgba(1,1,213,1) 50%, rgba(1,1,213,1) 85%, rgba(36, 1, 92, 0) 94%);
+    
+}
+
+.piece {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.playerOnePiece {
+    background:conic-gradient(#d95641, #b14439, #b2453a, #d25645, 
+    #d95641, #b14439, #b2453a, #d25645,
+    #d95641, #b14439, #b2453a, #d25645,
+    #d95641, #b14439, #b2453a, #d25645);
+    border: 5px double #b2453a;
+}
+
+.playerTwoPiece {
+    background:conic-gradient(#edc800, #e3b600, #f3cf00, #ffe800,
+    #edc800, #e3b600, #f3cf00, #ffe800,
+    #edc800, #e3b600, #f3cf00, #ffe800,
+    #edc800, #e3b600, #f3cf00, #ffe800);
+    border: 5px double #f3cf00;
+}
+
+.emptyPiece {
+    background-color: #8ebf50;
+    border: 1px solid #8ebf50;
+}
+
+#restart{
+    color: rgb(1, 1, 92);
+    border: 1px solid rgb(4, 2, 72);
+    border-radius: 20%;
+    position: sticky;
+    height: 40px;
+    font: bold;
+    color: white;
+    background-color: #1824ff;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-bottom: 4px solid #060d74;
+    text-shadow: 0px 2px 3px #555;
+
+    
+
+
+
+}
+
+#restart:hover{
+cursor: pointer;
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 2; 
+  }
+
+  #overlayText {
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    font-size:xx-large;
+    border: 0px solid;
+    font: bold;
+  }
+
+  #overlayRestart {
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5%;
+    border: 0px solid;
+    font: bold;
+    
+  }
+
+  #overlayRestart:hover{
+    cursor: pointer;
+  }
+
+ 
