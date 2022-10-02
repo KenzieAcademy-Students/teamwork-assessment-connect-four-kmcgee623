@@ -22,8 +22,8 @@ let board = [
                 let piece = board[i][j];
                 
                 if(piece !== 0) {
-                    if(piece === board[i][j+1] && piece === board[i][j+2] && piece === board[i][j+3]) {
-                    console.log("4 in a row horizontally at " + (j+1) + ":" + (i+1))
+                    if(piece === board[i][j + 1] && piece === board[i][j + 2] && piece === board[i][j + 3]) {
+                    console.log("4 in a row horizontally at " + (j + 1) + ":" + (i + 1))
                     winningNumber += 10
                     }
               }
@@ -41,8 +41,8 @@ let board = [
                 let piece = board[i][j];
                 
                 if(piece !== 0) {
-                    if(piece === board[i+1][j] && piece === board[i+2][j] && piece === board[i+3][j]) {
-                    console.log(" 4 in a row vertically at " + (j+1) + ":" + (i+1))
+                    if(piece === board[i + 1][j] && piece === board[i + 2][j] && piece === board[i + 3][j]) {
+                    console.log(" 4 in a row vertically at " + (j + 1) + ":" + (i + 1))
                     winningNumber += 50
                     }
               }
@@ -57,8 +57,8 @@ let board = [
                 let piece = board[i][j];
                 
                 if(piece !== 0) {
-                    if(piece === board[i-1][j+1] && piece === board[i-2][j+2] && piece === board[i-3][j+3]) {
-                    console.log("4 in a row diagonally going up at " + (j+1) + ":" + (i+1))
+                    if(piece === board[i - 1][j + 1] && piece === board[i - 2][j + 2] && piece === board[i - 3][j + 3]) {
+                    console.log("4 in a row diagonally going up at " + (j + 1) + ":" + (i + 1))
                     winningNumber += 100
                     }
               }
@@ -75,8 +75,8 @@ let board = [
                 if(piece !== 0) {
       
                     // Check the next two cells for the same value
-                    if(piece === board[i+1][j + 1] && piece === board[i+2][j+2] && piece === board[i+3][j+3]) {
-                      console.log("4 in a row diagonally going down at " + (j+1) + ":" + (i+1))
+                    if(piece === board[i + 1][j + 1] && piece === board[i + 2][j + 2] && piece === board[i + 3][j + 3]) {
+                      console.log("4 in a row diagonally going down at " + (j + 1) + ":" + (i + 1))
                       winningNumber += 150
                     }
             
@@ -109,7 +109,7 @@ let board = [
     for(i = 0; i < board.length; i++){
         let rowString = board[i].join(',')
         let row = board[i]
-        if (rowString !== '0,0,0,0,0,0,0'){
+        if (rowString !== '0 ,0 ,0 ,0 ,0 ,0 ,0'){
             rowCounter += 1
             for(j = 0; j < row.length; j++) {
                 let piece = board[i][j]
@@ -121,7 +121,7 @@ let board = [
                 }
             }
         
-        } else if (rowString === '0,0,0,0,0,0,0') {
+        } else if (rowString === '0 ,0 ,0 ,0 ,0 ,0 ,0') {
             console.log(`index ${i} is all zeroes`)
             return false
         }
