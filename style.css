@@ -10,6 +10,7 @@ body {
     background: #80a35f url("https://iili.io/Lj2B9t.jpg") no-repeat scroll 50% 0%;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 #board {
     display: flex;
     justify-content: space-evenly;
@@ -80,11 +81,6 @@ body {
     font-size: 16px;
     border-bottom: 4px solid #060d74;
     text-shadow: 0px 2px 3px #555;
-
-    
-
-
-
 }
 
 #restart:hover{
@@ -129,8 +125,7 @@ cursor: pointer;
     border-radius: 5%;
     border: 0px solid;
     font: bold;
-    
-  }
+}
 
   #overlayRestart:hover{
     cursor: pointer;
