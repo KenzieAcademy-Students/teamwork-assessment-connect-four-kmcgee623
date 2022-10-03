@@ -1,4 +1,7 @@
 //Starts a new game
+//Sources: Personal friends Jeremy E. Kenedy, Brain Nguyen current student at Arizona State University, family memeber Caleb French. I used this site for inspiration, and guidance: https://www.101computing.net/connect4-challenge/. I also refered back to past assignments to look at syntax. Fernando Puentes got advice on how to style our board from Kenzie Facilitator Lord Manny. 
+
+
 let board = [
     [0, 0, 0, 0, 0, 0, 0],
     [0, 0, 0, 0, 0, 0, 0],
@@ -7,7 +10,8 @@ let board = [
     [0, 0, 0, 0, 0, 0, 0],
     [0, 0, 0, 0, 0, 0, 0]
   ]
-  //Inserting Kristen McGee-------------------------------------------------------------------------------------------------------
+  //Worked on by Team Thistle minus Jonathan Haynes.
+
   let jEdge = board[0].length - 3;
   let iEdge = board.length - 3;
   
@@ -184,7 +188,7 @@ let board = [
   
   
   
-  //----------------------------------------------------------------------------------------------
+  //-----------------------------------------------------------
   let player = 1
   let eventText = document.getElementById("eventBox")
   let columns = []
