@@ -249,10 +249,11 @@ let board = [
   let alternatePlayer = function () {
     if (player === 1) {
         player = 2
-        eventText.innerText = "Player Two's Turn!"
+        eventText.innerHTML = `Player Two's Turn!  <img src="https://iili.io/L8Uz9j.jpg" alt="Girl in a jacket" width="20" height="20">
+        `
     } else if (player === 2){
         player = 1
-        eventText.innerText = "Player One's Turn!"
+        eventText.innerHTML = `Player One's Turn!  <img src="https://iili.io/L88PXS.jpg" alt="Girl in a jacket" width="20" height="20">`
     }
   }
   
